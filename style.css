@@ -1,0 +1,169 @@
+@import 'reset.css';
+
+body{
+	background-color:  #91908C;
+	overflow: hidden;
+}
+
+
+#container {
+	margin: auto;
+  margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	border: 4px solid #52514F;
+	
+}
+
+
+#game {
+	box-sizing: border-box;
+	display:flex; 
+	flex-direction: column;
+	position: relative;
+}
+
+#statistic {
+	background-color:white;
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+  border-left: 4px solid #52514F;
+}
+
+
+.row {
+  border: 1px solid #747275;
+	display: flex;
+	flex-grow:1; 
+  border-radius: 1px;
+
+}
+
+.cell {
+   flex-grow: 1;
+   border-left: 1px solid #747275;
+	border-radius: 4px;
+}
+
+
+#title {
+		font-size: 2em;
+		font-family: cursive;
+		color: #91908C;
+		font-weight: bold;
+}
+
+#next-figure {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+}
+
+#first-figure{
+	width: 75%;
+	display:flex; 
+	flex-direction: column;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 100px;
+	align-self: center;
+}
+
+#second-figure{
+	width: 75%;
+	display:flex; 
+	flex-direction: column;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 100px;
+	align-self: center;
+}
+
+#third-figure{
+	width: 75%;
+	display:flex; 
+	flex-direction: column;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height:100px;
+	align-self: center;
+}
+
+
+#score {
+	font-size: 40px;
+	color: #91908C;
+	font-weight: bold;
+}
+
+#buttons {
+  flex-grow: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	
+}
+
+
+.but {
+    background-color: #91908C;
+    border:2px solid #52514F;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: cursive;
+	  align-self: center;
+} 
+
+.but:hover {
+    background-color: #52514F;
+    cursor: pointer;
+}
+
+#game-over {
+    text-align: center;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+
+
+#div-resume {
+    text-align: center;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    
+}
+
+#game h1 {
+    font-size: 3em;
+	  color:white;
+    font-weight: bold;
+    margin: 10px;
+}
+
+
+#restart-game {
+    display: none;
+}
+
+
+.question{
+	height: 100%;
+	width: 100%;
+}
+
+#tetris-img {
+	height: 100%;
+}
